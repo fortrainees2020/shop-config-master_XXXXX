@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: zuul
+    
+server :
+  port : 9009
+  
+zuul:
+  routes:
+    shopforce:
+      path: /shopforce/**
+      service-id: SHOPFORCE
+      strip-prefix: false
